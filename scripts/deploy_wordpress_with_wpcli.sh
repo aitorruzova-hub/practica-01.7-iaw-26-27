@@ -65,8 +65,7 @@ wp option update whl_page "$WORDPRESS_LOGIN_URL" --path=/var/www/html --allow-ro
 wp theme install saaslauncher --activate --path=/var/www/html --allow-root
 
 #Instalar un plugin
-
-
+wp plugin install resolai-ai-customer-support --activate --path=/var/www/html/ --allow-root
 
 #Modificamos los permisos
 chown -R www-data:www-data /var/www/html

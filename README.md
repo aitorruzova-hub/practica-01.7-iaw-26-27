@@ -221,7 +221,7 @@ wp theme install saaslauncher --activate --path=/var/www/html --allow-root
 # 12. Instalacion y activacion del plugin de resolai 
 wp plugin install resolai-ai-customer-support --activate --path=/var/www/html/ --allow-root
 
-# 12. Asignación final de permisos al usuario del servidor web
+# 13. Asignación final de permisos al usuario del servidor web
 chown -R www-data:www-data /var/www/html
 
 ```

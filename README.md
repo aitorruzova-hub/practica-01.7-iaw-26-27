@@ -218,7 +218,10 @@ wp option update whl_page "$WORDPRESS_LOGIN_URL" --path=/var/www/html --allow-ro
 # 11. Instalación y activación del tema 'saaslauncher'
 wp theme install saaslauncher --activate --path=/var/www/html --allow-root
 
-# 12. Asignación final de permisos al usuario del servidor web
+# 12. Instalacion y activacion del plugin de resolai 
+wp plugin install resolai-ai-customer-support --activate --path=/var/www/html/ --allow-root
+
+# 13. Asignación final de permisos al usuario del servidor web
 chown -R www-data:www-data /var/www/html
 
 ```
@@ -237,7 +240,7 @@ Muestra la ejecución completa del script `deploy_wordpress_with_wpcli.sh` sin e
 
 ### 2. Acceso a la Web Pública de WordPress 
 
-Visualización de la página principal del sitio web desplegado accediendo mediante el nombre de dominio configurado.
+Visualización de la página principal del sitio web desplegado accediendo mediante el nombre de dominio configurado y visualizacion del plugin resolai.
 
    ![](./screenshots/web.png)
 
